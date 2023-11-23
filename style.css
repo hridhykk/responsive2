@@ -1,0 +1,291 @@
+
+:root{
+  
+  --bg-white:#fff;
+  --primary-text:#061738;
+ --images-prime:#60cd12;
+  --light-color:#e2f6ed;
+  --dark-color:#03262c;
+  --text-white:#fff;
+  --text-gray:#dee2e6;
+  --anchor-color:#007aft;
+}
+body,
+html{
+  color:var(--primary-text);
+  font-size:10px;
+ 
+  font-family:var(--primary-font);
+  scroll-behavior: smooth;
+  line-height: 1.5;
+  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+  margin:0;
+}
+ 
+h1{
+  font-size: 9rem;
+  line-height: 1.4;
+ 
+  color:var(--primary-text)
+}
+h2{
+  color: var(--primary-text);
+  font-size: 4.7rem;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: capitalize;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+
+h3{
+  color:var(--text-white);
+  font-size: 3.1rem;
+  line-height: 1.2;
+ 
+}
+h4{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-white);
+
+}
+
+h5{
+  font-size:1.8rem;
+
+  line-height:1;
+  color: var(--text-white);
+
+}
+p{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+  color: var(--text-white);
+  font-family: var(--secondary-font);
+}
+
+
+.header{
+  position:fixed;
+  width:100%;
+  top:0;
+  left:0;
+  z-index: 2;
+ 
+}
+.header .navbar{
+
+  background: url('../images/header-bg.png');
+  background-repeat:no-repeat ;
+  background-position: center;
+  background-size:cover;
+  
+  padding-bottom:2rem 5rem;
+ 
+}
+ .navbar .navbar-brand{
+
+ padding-bottom: 1.4rem;
+}
+.header .navbar-nav .nav-link{
+  color: var(--text-white);
+  text-transform: uppercase;
+  font-size:1.6rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  margin:0 0.2rem;
+  font-family: var(--primary-font);
+}
+
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link:active{
+  color: var(--text-gray);
+}
+
+.banner_section{
+  background: url('../images/banner-slide/Banner-1.jpg');
+  background-repeat:no-repeat ;
+  background-position: center;
+  background-size:cover;
+  height: 90vh;
+}
+.header .navbar-nav .nav-link:hover,
+.header .navbar-nav .nav-link.active{
+  color: var(--images-prime);
+}
+.header .navbar-toggler{
+  color: var(--text-white);
+  font-size: 2rem;
+  height: 2.7rem;
+  padding: 0;
+  background: var(--text-gray);
+}
+
+@media (max-width:1170px){
+  .section-subtitle{
+    max-width:60%;
+  }
+
+  .header .navbar{
+    background-size:cover;
+    padding:2rem;
+  }
+
+  .header .navbar-nav{
+    margin-top: 2rem;
+  }
+  .header .navbar-nav .nav-link{
+    padding:0.2rem 0.5rem;
+    margin-bottom:1rem;
+  }
+  .header .header_right span{
+    padding:0.2rem 0.5rem;
+  }
+}
+.main-btn{
+  position:relative;
+  color:var(--bg-white);
+  background: linear-gradient(#0f740f,#5cb917);
+  z-index: 1;
+  overflow: hidden;
+  border: 0.2rem solid var(--bg-white);
+  text-transform: uppercase;
+  padding:1rem 3.5rem;
+  font-weight:600;
+  font-size:1.8rem;
+  margin-top:1.5rem;
+  letter-spacing:0.2rem;
+}
+.main-btn:hover{
+  background: var(--bg-white);
+  color:var(--images-prime);
+  border:0.2rem solid var(--secondary-color);
+}
+.banner_section{
+  background: url('../images/banner-slide/Banner-1.jpg');
+  background-repeat:no-repeat ;
+  background-position: center;
+  background-size:cover;
+  height: 90vh;
+ }
+ .banner_section .carousel-item{
+  padding:6rem 0;
+  height:100vh;
+ }
+ .banner_section .carousel-caption{
+  top:30%;
+  bottom:0;
+  left:3%;
+  right:0;
+  text-align: left;
+  width:100%;
+
+ }
+ .banner_section .carousel-caption h3{
+  padding: 0.5rem 1.5rem;
+  background-color: var(--dark-color);
+  display: inline;
+ }
+
+ @media(max-width:767px){
+  body,html{
+    font-size:8px;
+  }
+ 
+  .banner_section{
+    min-height:70vh;
+  
+
+  }
+  .banner_section .carousel-item{
+   
+    height:70vh;
+ }
+ 
+}
+.about_section{
+  background: url('../images/about/about-banner.jpg');
+  background-repeat:no-repeat ;
+  background-position:right;
+  background-size:cover;
+  height: 100vh;
+  
+}
+.about_section .carousel-item{
+  padding:6rem 0;
+  height:100vh;
+ }
+ .about_section .carousel-caption{
+  top:30%;
+  bottom:0;
+  left:3%;
+  right:0;
+  text-align: left;
+  width:100%;
+
+ }
+ .about_section .carousel-caption h3{
+  padding: 0.5rem 1.5rem;
+  color: var(--dark-color);
+  display: inline;
+  overflow-wrap:break-word;
+  width:50%
+ }
+ .card {
+  width: 75%; 
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+.product_title{
+  text-align: center;
+  margin-top:3rem;
+}
+ 
+.footer_section{
+  background: url('../images/footer-bg/footer_bg.png');
+  background-repeat:no-repeat ;
+  background-position: center;
+  background-size:cover;
+  
+
+ 
+}
+
+.section_review{
+  height:110vh;
+  margin-top: 6rem;
+}
+.card-footer{
+  margin-top: 12rem;
+  width:75%;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+.background-image-column {
+  height:auto; 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+.review_title{
+  margin-top: 20px;
+}
